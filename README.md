@@ -10,9 +10,7 @@ Descargar e instalar GIT desde la página oficial
 Para saber la versión de Git instalada utilizamos el comando git
 \--version
 
-![](.//media/image1.png){width="5.3603597987751535in"
-height="0.7448698600174978in"
-
+![](.//media/image1.png)
 3.  **Configurar nombre y correo de contribuidor de GIT**
 
 Para comenzar debemos identificarnos con un nombre y un correo, esto se
@@ -105,8 +103,8 @@ sido modificados archivos.
 -   Como ejemplo voy a borrar la función holaMundo del archivo
     funciones.js y comprobar los cambios mediante el comando git diff
 
-> ![](.//media/image11.png)![](.//media/image12.png)
->
+> ![](.//media/image11.png)
+> ![](.//media/image12.png)
 > ![](.//media/image13.png)
 
 11. **Restaurar archivos del último commit**
@@ -254,8 +252,8 @@ cambio el segundo (soft) tendrá agregado los archivos al staging area.
 -   Como ejemplo voy a modificar mi archivo ArrowFunctions.js y haré un
     commit.
 
-> ![](.//media/image34.png)![](.//media/image35.png)
->
+> ![](.//media/image34.png)
+> ![](.//media/image35.png)
 > ![](.//media/image36.png)
 
 -   Ahora volveré al commit de renombrar el archivo haciendo uso del git
