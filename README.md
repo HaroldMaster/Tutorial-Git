@@ -11,6 +11,7 @@ Para saber la versión de Git instalada utilizamos el comando git
 \--version
 
 ![](.//media/image1.png)
+
 3.  **Configurar nombre y correo de contribuidor de GIT**
 
 Para comenzar debemos identificarnos con un nombre y un correo, esto se
