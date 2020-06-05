@@ -453,13 +453,13 @@ la rama principal (master) a través de un merge.
 > ![](.//media/image57.png){width="2.836444663167104in"
 > height="0.6306310148731409in"}
 >
-> ![](.//media/image57.png){width="2.4684678477690287in"
+> ![](.//media/image58.png){width="2.4684678477690287in"
 > height="0.9505752405949256in"}
 
 -   Como podemos ver no generó conflicto, más bien añadió
     automáticamente los cambios de la rama caso1 a la rama master.
 
-> ![](.//media/image58.png){width="3.8960017497812776in"
+> ![](.//media/image59.png){width="3.8960017497812776in"
 > height="1.6367672790901138in"}
 
 -   Caso 2: cambio en la rama master pero la nueva rama se mantiene
@@ -472,20 +472,20 @@ la rama principal (master) a través de un merge.
 
 -   Creamos la nueva rama llamada caso2.
 
-> ![](.//media/image59.png){width="1.5in" height="0.3958333333333333in"}
+> ![](.//media/image60.png){width="1.5in" height="0.3958333333333333in"}
 
 -   Modificamos el archivo index.html de la rama principal, lo guardamos
     y lo añadimos al repositorio.
 
-> ![](.//media/image58.png){width="3.8960017497812776in"
+> ![](.//media/image59.png){width="3.8960017497812776in"
 > height="1.6367672790901138in"}
 >
-> ![](.//media/image60.png){width="3.8627449693788276in"
+> ![](.//media/image61.png){width="3.8627449693788276in"
 > height="1.0775503062117235in"}
 
 -   Hacemos merge con la rama creada que esta con el index.html vacío.
 
-> ![](.//media/image61.png){width="1.4895833333333333in"
+> ![](.//media/image62.png){width="1.4895833333333333in"
 > height="0.5104166666666666in"}
 
 -   En este caso no dio ningún conflicto aunque los dos archivos
@@ -493,7 +493,7 @@ la rama principal (master) a través de un merge.
     rama creada no se llenó con los datos de la rama master se quedó
     igual a cuando fue creada la rama, en este caso se mantuvo vacío.
 
-> ![](.//media/image62.png){width="1.8333333333333333in"
+> ![](.//media/image63.png){width="1.8333333333333333in"
 > height="0.9803926071741033in"}
 
 -   Caso 3: El mismo cambio tanto en la rama master como en la nueva
@@ -506,35 +506,35 @@ la rama principal (master) a través de un merge.
 
 -   Creamos la nueva rama y modificamos el index.html
 
-> ![](.//media/image63.png){width="2.4479166666666665in"
+> ![](.//media/image64.png){width="2.4479166666666665in"
 > height="0.4791666666666667in"}
 >
-> ![](.//media/image58.png){width="3.8960017497812776in"
+> ![](.//media/image59.png){width="3.8960017497812776in"
 > height="1.6367672790901138in"}
 
 -   Lo añadimos al repositorio de la rama creada
 
-> ![](.//media/image64.png){width="3.8725492125984253in"
+> ![](.//media/image65.png){width="3.8725492125984253in"
 > height="0.7433595800524935in"}
 
 -   Cambiamos a la rama master y hacemos el mismo cambio
 
-> ![](.//media/image65.png){width="2.25in" height="0.5625in"}
+> ![](.//media/image66.png){width="2.25in" height="0.5625in"}
 >
-> ![](.//media/image58.png){width="3.8960017497812776in"
+> ![](.//media/image59.png){width="3.8960017497812776in"
 > height="1.6367672790901138in"}
 
 -   Añadimos el cambio al repositorio de la rama master.
 
-> ![](.//media/image66.png){width="3.898284120734908in"
+> ![](.//media/image67.png){width="3.898284120734908in"
 > height="0.830320428696413in"}
 
 -   Hacemos merge con la rama creada.
 
-> ![](.//media/image67.png){width="2.9375in"
+> ![](.//media/image68.png){width="2.9375in"
 > height="0.5104166666666666in"}
 >
-> ![](.//media/image68.png){width="3.8907655293088363in"
+> ![](.//media/image69.png){width="3.8907655293088363in"
 > height="1.022671697287839in"}
 
 -   En este caso aparece este mensaje en donde podemos especificar qué
@@ -547,13 +547,13 @@ la rama principal (master) a través de un merge.
 
 -   Podemos ejecutar nuevamente el merge sin generar conflictos
 
-> ![](.//media/image69.png){width="1.4791666666666667in"
+> ![](.//media/image70.png){width="1.4791666666666667in"
 > height="0.5520833333333334in"}
 
 -   Se puede observar con git log los commits y si se añadieron líneas
     en el archivo abierto se lo podrá visualizar.
 
-> ![](.//media/image70.png){width="3.857638888888889in"
+> ![](.//media/image71.png){width="3.857638888888889in"
 > height="1.0253423009623797in"}
 
 -   Caso 4: cambio en las mismas líneas de código de la rama master y de
@@ -562,40 +562,40 @@ la rama principal (master) a través de un merge.
     -   Comenzamos con un archivo index.html con la estructura html5
         alojado en la rama principal y añadido al repositorio.
 
-> ![](.//media/image58.png){width="3.8960017497812776in"
+> ![](.//media/image59.png){width="3.8960017497812776in"
 > height="1.6367672790901138in"}
 
 -   Creamos la nueva rama y modificamos el index.html añadiéndole una
     etiqueta script.
 
-> ![](.//media/image71.png){width="2.6145833333333335in"
+> ![](.//media/image72.png){width="2.6145833333333335in"
 > height="0.5625in"}
 >
-> ![](.//media/image72.png){width="3.858050087489064in"
+> ![](.//media/image73.png){width="3.858050087489064in"
 > height="1.6441174540682415in"}
 
 -   Guardamos y lo añadimos al repositorio.
 
-> ![](.//media/image73.png){width="3.8333333333333335in"
+> ![](.//media/image74.png){width="3.8333333333333335in"
 > height="1.2395833333333333in"}
 
 -   Regresamos a la rama master y modificamos el index.html, solo que
     esta vez añadiremos una etiqueta de párrafo.
 
-> ![](.//media/image74.png){width="2.1354166666666665in"
+> ![](.//media/image75.png){width="2.1354166666666665in"
 > height="0.5208333333333334in"}
 >
-> ![](.//media/image75.png){width="3.8528226159230097in"
+> ![](.//media/image76.png){width="3.8528226159230097in"
 > height="1.6745100612423447in"}
 
 -   Guardamos y lo añadimos al repositorio
 
-> ![](.//media/image76.png){width="3.892156605424322in"
+> ![](.//media/image77.png){width="3.892156605424322in"
 > height="0.8023304899387577in"}
 
 -   Realizamos el merge con la rama creada.
 
-> ![](.//media/image77.png){width="3.933980752405949in"
+> ![](.//media/image78.png){width="3.933980752405949in"
 > height="0.5098031496062992in"}
 
 -   Aquí podemos ver un conflicto ya que los dos archivos fueron
@@ -606,23 +606,23 @@ la rama principal (master) a través de un merge.
 > los conflictos entre las ramas y para solucionarlo tenemos que
 > eliminar estos símbolos y letras manualmente.
 >
-> ![](.//media/image78.png){width="3.8869039807524057in"
+> ![](.//media/image79.png){width="3.8869039807524057in"
 > height="1.7555971128608925in"}
 >
 > Cambios:
 >
-> ![](.//media/image79.png){width="3.832393919510061in"
+> ![](.//media/image80.png){width="3.832393919510061in"
 > height="1.4317399387576553in"}
 
 -   Guardamos y lo añadimos al repositorio.
 
-> ![](.//media/image80.png){width="2.8854166666666665in"
+> ![](.//media/image81.png){width="2.8854166666666665in"
 > height="0.7916666666666666in"}
 
 -   Una vez resuelto podemos verificar con otro merge a la rama y todo
     estará sin errores.
 
-> ![](.//media/image81.png){width="1.46875in"
+> ![](.//media/image82.png){width="1.46875in"
 > height="0.4166666666666667in"}
 
 -   Hay que tomar en cuenta que así se haya solucionado el conflicto los
@@ -632,7 +632,7 @@ la rama principal (master) a través de un merge.
 -   Si se desea observar de una manera más gráfica se puede digitar el
     comando git log ---oneline ---decorate ---all \--graph
 
-> ![](.//media/image82.png){width="3.920955818022747in"
+> ![](.//media/image83.png){width="3.920955818022747in"
 > height="0.7440146544181977in"}
 
 24. **Etiquetas**
@@ -640,18 +640,18 @@ la rama principal (master) a través de un merge.
 Para poder versionar nuestro código podemos hacer uso del comando git
 tag de la siguiente manera:
 
-![](.//media/image83.png){width="5.460784120734908in"
+![](.//media/image84.png){width="5.460784120734908in"
 height="1.308209755030621in"}
 
 Así mismo podemos borrarlo mediante git tag -d
 
-![](.//media/image84.png){width="2.6145833333333335in"
+![](.//media/image85.png){width="2.6145833333333335in"
 height="0.53125in"}
 
 También podemos ponerle tag a cualquier commit, previamente creado,
 mediante la instrucción git tag -a versión \[commitid\] -m "\[Mensaje\]"
 
-![](.//media/image85.png){width="5.470588363954506in"
+![](.//media/image86.png){width="5.470588363954506in"
 height="0.43872812773403325in"}
 
-![](.//media/image86.png){width="4.666666666666667in" height="0.75in"}
+![](.//media/image87.png){width="4.666666666666667in" height="0.75in"}
