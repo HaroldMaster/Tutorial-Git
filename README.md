@@ -11,7 +11,7 @@ Para saber la versión de Git instalada utilizamos el comando git
 \--version
 
 ![](.//media/image1.png){width="5.3603597987751535in"
-height="0.7448698600174978in"}
+height="0.7448698600174978in"
 
 3.  **Configurar nombre y correo de contribuidor de GIT**
 
@@ -21,22 +21,17 @@ ver quién hizo los cambios del código.
 
 -   git config \--global user.name "\[Nombre\]"
 
-```{=html}
-<!-- -->
-```
 -   git config \--global user.email "\[Correo\]" (No es necesario que
     sea un correo válido)
 
-![](.//media/image2.png){width="5.405404636920385in"
-height="0.7602143482064742in"}
+![](.//media/image2.png)
 
 4.  **Visualizar nombre y correo de contribuidor de GIT**
 
 Con el comando git config ---global -l puedo ver el usuario y correo
 actual del repositorio local
 
-![](.//media/image3.png){width="3.8229166666666665in"
-height="0.6126126421697288in"}
+![](.//media/image3.png)
 
 5.  **Creación de un repositorio local**
 
@@ -45,11 +40,9 @@ repositorio local, ya dentro de la carpeta seleccionada ejecutamos el
 comando git init el cual inicializa el repositorio local creando una
 carpeta .git oculta.
 
-![](.//media/image4.png){width="5.459458661417323in"
-height="0.7486111111111111in"}
+![](.//media/image4.png)
 
-![](.//media/image5.png){width="5.422916666666667in"
-height="0.7117115048118985in"}
+![](.//media/image5.png)
 
 6.  **Arquitectura básica de GIT**
 
@@ -75,11 +68,9 @@ al staging area. Finalmente si aparece el mensaje Nothing to commit,
 working tree clean, significa que todos los archivos ya han sido subidos
 al repositorio.
 
-![](.//media/image6.png){width="5.459027777777778in"
-height="1.6457360017497813in"}
+![](.//media/image6.png)
 
-![](.//media/image7.png){width="3.558558617672791in"
-height="0.8028455818022747in"}
+![](.//media/image7.png)
 
 8.  **Pasar de estado Working Directory -- Staging Area**
 
@@ -93,8 +84,7 @@ significa que se añaden **todos** los archivos de la carpeta al staging
 del archivo, ejemplo: git add index.html y solo el index será añadido al
 staging área.
 
-![](.//media/image8.png){width="5.4504505686789155in"
-height="2.261833989501312in"}
+![](.//media/image8.png)
 
 9.  **Pasar de estado Staging Area - Repository**
 
@@ -102,11 +92,9 @@ El comando git commit -m "\[Mensaje\]" se utiliza para terminar de
 añadir los archivos del staging area al repositorio. El mensaje dentro
 de las comillas sirve para identificar el cambio realizado.
 
-![](.//media/image9.png){width="5.522521872265966in"
-height="0.7792836832895887in"}
+![](.//media/image9.png)
 
-![](.//media/image10.png){width="5.531531058617673in"
-height="0.5893186789151356in"}
+![](.//media/image10.png)
 
 10. **Verificar cambios entre el repositorio actual y el último commit**
 
@@ -117,12 +105,9 @@ sido modificados archivos.
 -   Como ejemplo voy a borrar la función holaMundo del archivo
     funciones.js y comprobar los cambios mediante el comando git diff
 
-> ![](.//media/image11.png){width="2.388076334208224in"
-> height="3.387387357830271in"}![](.//media/image12.png){width="2.675675853018373in"
-> height="3.418474409448819in"}
+> ![](.//media/image11.png)![](.//media/image12.png)
 >
-> ![](.//media/image13.png){width="5.171171259842519in"
-> height="2.5297812773403323in"}
+> ![](.//media/image13.png)
 
 11. **Restaurar archivos del último commit**
 
@@ -134,11 +119,9 @@ commit en caso de haber modificado los archivos por error.
     restauró la función holaMundo automáticamente debido a que estaba
     presente en mi último commit.
 
-> ![](.//media/image14.png){width="5.1482217847769025in"
-> height="0.4324321959755031in"}
+> ![](.//media/image14.png)
 >
-> ![](.//media/image15.png){width="2.623611111111111in"
-> height="1.2432425634295714in"}
+> ![](.//media/image15.png)
 
 12. **Quitar archivos del Staging Area**
 
@@ -150,31 +133,26 @@ repositorio.
 -   Como ejemplo se añadió el nuevo archivo Fat Arrow Functions.js a la
     carpeta en donde se encuentra mi repositorio.
 
-> ![](.//media/image16.png){width="5.153153980752406in"
-> height="0.45433945756780403in"}
+> ![](.//media/image16.png)
 
 -   Con la ayuda del comando git status se puede observar que el archivo
     Fat arrow functions.js se encuentra en color rojo debido a que es un
     nuevo cambio.
 
-> ![](.//media/image17.png){width="5.155921916010499in"
-> height="1.0810804899387576in"}
+> ![](.//media/image17.png)
 
 -   Al hacer el git add . el archivo pasará al staging área cambiando su
     color a verde
 
-> ![](.//media/image18.png){width="5.155555555555556in"
-> height="0.9146948818897638in"}
+> ![](.//media/image18.png)
 
 -   Finalmente para sacar el archivo del staging area utilizamos el
     comando git reset \[NombreDelArchivo\], devolviéndolo al working
     directory.
 
-> ![](.//media/image19.png){width="2.9583333333333335in"
-> height="0.40625in"}
+> ![](.//media/image19.png)
 >
-> ![](.//media/image20.png){width="5.153153980752406in"
-> height="1.1891896325459317in"}
+> ![](.//media/image20.png)
 
 13. **Historial de commits**
 
@@ -182,8 +160,7 @@ El comando git log muestra un histórico de los commits realizados
 incluyendo su id-hash, la fecha, el autor y el correo del usuario que lo
 realizó.
 
-![](.//media/image21.png){width="5.36875in"
-height="1.504504593175853in"}
+![](.//media/image21.png)
 
 14. **Alias para comandos**
 
@@ -192,19 +169,16 @@ comando con el fin de ahorrar tiempo o facilitar su escritura.
 
 -   git config --global alias.\[Alias\] "\[Comando\]"
 
-> ![](.//media/image22.png){width="3.1354166666666665in"
-> height="1.125in"}
+> ![](.//media/image22.png)
 
 15. **Modificar mensaje de un commit**
 
 Si se comete algún error al poner el mensaje del commit puedo cambiarlo
 mediante el comando git commit --amend -m "\[Nuevo mensaje\]"
 
-![](.//media/image23.png){width="5.405496500437446in"
-height="1.0900896762904637in"}
+![](.//media/image23.png)
 
-![](.//media/image24.png){width="5.41903980752406in"
-height="1.2702701224846895in"}
+![](.//media/image24.png)
 
 16. **Cambio de nombres a archivos dentro del repositorio**
 
@@ -219,14 +193,11 @@ explorador de archivos. Finalmente también es necesario terminar de
 añadir los cambios al repositorio mediante los comandos git add . y git
 commit
 
-![](.//media/image25.png){width="4.367273622047244in"
-height="0.495495406824147in"}
+![](.//media/image25.png)
 
-![](.//media/image26.png){width="2.4270833333333335in"
-height="0.5625in"}
+![](.//media/image26.png)
 
-![](.//media/image27.png){width="4.854166666666667in"
-height="1.0104166666666667in"}
+![](.//media/image27.png)
 
 17. **Eliminar un archivo del repositorio**
 
@@ -234,8 +205,7 @@ Al igual que el caso anterior, si debemos borrar un archivo, podemos
 eliminarlo y volver a hacer el commit, sin embargo para llevar una
 control de la versión, se recomienda usar el comando git rm Archivo
 
-![](.//media/image28.png){width="4.302083333333333in"
-height="2.6145833333333335in"}
+![](.//media/image28.png)
 
 18. **Recuperar archivos de anteriores commits**
 
@@ -244,11 +214,9 @@ recuperarlo a través del comando git reset \--hard \[commitid\], en
 donde el commitid es el el id del commit al que queremos llegar después
 del hard.
 
-![](.//media/image29.png){width="5.372549212598425in"
-height="0.5306846019247594in"}
+![](.//media/image29.png)
 
-![](.//media/image30.png){width="2.3333333333333335in"
-height="0.5416666666666666in"}
+![](.//media/image30.png)
 
 19. **Obtener el id o hash del commit**
 
@@ -258,13 +226,11 @@ presentadas en color amarillo-
 
 -   **Git log**
 
-> ![](.//media/image31.png){width="4.95097987751531in"
-> height="0.502749343832021in"}
+> ![](.//media/image31.png)
 
 -   **Git reflog**
 
-> ![](.//media/image32.png){width="4.941175634295713in"
-> height="0.2923611111111111in"}
+> ![](.//media/image32.png)
 
 20. **Git reflog**
 
@@ -273,8 +239,7 @@ los cambios realizados después de ese commit, sin embargo con el comando
 git reflog sí se puede visualizar todo el histórico de commits
 realizados en el repositorio.
 
-![](.//media/image33.png){width="5.392156605424322in"
-height="1.1965277777777779in"}
+![](.//media/image33.png)
 
 21. **Ubicarse en otro commit manteniendo los cambios del último
     commit**
@@ -289,24 +254,19 @@ cambio el segundo (soft) tendrá agregado los archivos al staging area.
 -   Como ejemplo voy a modificar mi archivo ArrowFunctions.js y haré un
     commit.
 
-> ![](.//media/image34.png){width="2.6799551618547683in"
-> height="2.5099956255468068in"}![](.//media/image35.png){width="2.459459755030621in"
-> height="2.522221128608924in"}
+> ![](.//media/image34.png)![](.//media/image35.png)
 >
-> ![](.//media/image36.png){width="5.1441447944007in"
-> height="2.840660542432196in"}
+> ![](.//media/image36.png)
 
 -   Ahora volveré al commit de renombrar el archivo haciendo uso del git
     reset --mixed \[Commitid\]
 
-> ![](.//media/image37.png){width="5.153153980752406in"
-> height="1.8545122484689414in"}
+> ![](.//media/image37.png)
 
 -   Como se puede ver volvimos al último commit, sin embargo, los
     cambios realizados en el anterior commit se mantienen.
 
-> ![](.//media/image38.png){width="5.083333333333333in"
-> height="3.3229166666666665in"}
+> ![](.//media/image38.png)
 
 22. **Archivo .gitignore**
 
@@ -318,26 +278,21 @@ subirlo al repositorio.
 -   Como ejemplo voy a cargar un nuevo archivo a mi carpeta donde
     inicialice el git.
 
-> ![](.//media/image39.png){width="4.862744969378828in"
-> height="0.9395111548556431in"}
-
+> ![](.//media/image39.png)
 -   Ahora voy a crear el archivo .gitignore y añadiré el archivo que no
     quiero que sea tomado en cuenta en este caso Arquitectura Angular2
 
-> ![](.//media/image40.png){width="2.28125in"
-> height="0.7254910323709536in"}
+> ![](.//media/image40.png)
 
 -   Al hacer un git status solo tomara como nuevo al documento
     .gitignore e ignorará al archivo Arquitectura Angular2
 
-> ![](.//media/image41.png){width="5.159229002624672in"
-> height="0.918918416447944in"}
+> ![](.//media/image41.png)
 
 -   Por último hacemos el commit y el archivo .gitignore será parte de
     nuestro repositorio.
 
-> ![](.//media/image42.png){width="5.117117235345582in"
-> height="1.956337489063867in"}
+> ![](.//media/image42.png)
 
 -   <https://github.com/github/gitignore> en este link puedes encontrar
     ejemplos de archivos .gitignore dependiendo de la tecnología que
@@ -356,63 +311,56 @@ la rama principal (master) a través de un merge.
 -   Comenzaremos creando una nueva rama llamada firstbranch con la ayuda
     del comando git branch \[NombredelaRama\]
 
-> ![](.//media/image43.png){width="5.167811679790026in"
-> height="1.2432436570428695in"}
+> ![](.//media/image43.png)
 
 -   Observamos que ahora hay dos ramas, la master y la firstbranch, sin
     embargo el HEAD apunta a master. Ahora procedemos a crear un nuevo
     archivo de prueba dentro de la carpeta donde se encuentra iniciado
     el git.
 
-> ![](.//media/image44.png){width="5.162630139982502in"
-> height="1.6396391076115486in"}
+> ![](.//media/image44.png)
+
 
 -   Ahora nos ubicaremos en la nueva rama usando el comando git checkout
     \[NombredelaRama\]
 
-> ![](.//media/image45.png){width="5.087436570428697in"
-> height="0.7927930883639545in"}
+> ![](.//media/image45.png)
 
 -   Una vez ubicados en la nueva rama hacemos el git add . y el git
     commit para guardar los cambios que se verán reflejados solo en la
     rama seleccionada.
 
-> ![](.//media/image46.png){width="5.164897200349956in"
-> height="1.3513517060367455in"}
+> ![](.//media/image46.png)
 
 -   Los cambios solo se verán reflejados en la rama firstbranch más no
     en la rama master.
 
-> ![](.//media/image47.png){width="5.1978893263342085in"
-> height="1.4324332895888015in"}
+> ![](.//media/image47.png)
 
 -   Una vez que estamos seguros de los cambios realizados en la rama
     creada, podemos unir los cambios a la rama principal a través de un
     merge. Para ello primero nos ubicamos en la rama master y hacemos un
     git merge \[NombredelaRama\]
 
-> ![](.//media/image48.png){width="3.9375in" height="1.78125in"}
+> ![](.//media/image48.png)
 
 -   Aquí ya no es necesario hacer un commit puesto que toma el último
     commit de la rama creada.
 
-> ![](.//media/image49.png){width="5.2458562992125986in"
-> height="0.8918919510061243in"}
+> ![](.//media/image49.png)
 
 -   Si queremos podemos borrar la rama podemos usar el comando git
     branch -d \[NombredelaRama\] . Este comando no lo podemos ejecutar
     desde el interior de la rama que queremos eliminar, por lo que
     tenemos que ubicarnos en la rama master.
 
-> ![](.//media/image50.png){width="5.120484470691164in"
-> height="1.531532152230971in"}
+> ![](.//media/image50.png)
 
 -   Un comando opcional para crear la rama y ubicarnos en ella
     instantáneamente sin la necesidad de usar el checkout, podemos usar
     el comando git checkout -b \[NombredelaRama\]
 
-> ![](.//media/image51.png){width="5.14313867016623in"
-> height="0.6936942257217847in"}
+> ![](.//media/image51.png)
 
 -   El comando merge no dará problemas siempre y cuando no haya
     conflictos entre archivos de la rama principal con el de la rama
@@ -428,39 +376,32 @@ la rama principal (master) a través de un merge.
         -   Comenzamos con el archivo index.html vacío y añadido al
             repositorio en la rama principal.
 
-> ![](.//media/image52.png){width="2.5in" height="0.9270833333333334in"}
+> ![](.//media/image52.png)
 
 -   Creamos la nueva rama llamada caso1
 
-> ![](.//media/image53.png){width="2.34375in"
-> height="0.6666666666666666in"}
+> ![](.//media/image53.png)
 
 -   Modificamos el index.html de la rama caso1
 
-> ![](.//media/image54.png){width="3.8468471128608925in"
-> height="1.6339031058617672in"}
+> ![](.//media/image54.png)
 
 -   Guardamos y lo añadimos al repositorio
 
-> ![](.//media/image55.png){width="0.9895833333333334in"
-> height="0.40625in"}
+> ![](.//media/image55.png)
 >
-> ![](.//media/image56.png){width="3.9117639982502186in"
-> height="0.7647058180227472in"}
+> ![](.//media/image56.png)
 
 -   Volvemos a la rama principal y hacemos merge
 
-> ![](.//media/image57.png){width="2.836444663167104in"
-> height="0.6306310148731409in"}
+> ![](.//media/image57.png)
 >
-> ![](.//media/image58.png){width="2.4684678477690287in"
-> height="0.9505752405949256in"}
+> ![](.//media/image58.png)
 
 -   Como podemos ver no generó conflicto, más bien añadió
     automáticamente los cambios de la rama caso1 a la rama master.
 
-> ![](.//media/image59.png){width="3.8960017497812776in"
-> height="1.6367672790901138in"}
+> ![](.//media/image59.png)
 
 -   Caso 2: cambio en la rama master pero la nueva rama se mantiene
     igual
@@ -468,33 +409,28 @@ la rama principal (master) a través de un merge.
     -   Comenzamos con el archivo index.html vacío y añadido al
         repositorio en la rama principal.
 
-> ![](.//media/image52.png){width="2.5in" height="0.9270833333333334in"}
+> ![](.//media/image52.png)
 
 -   Creamos la nueva rama llamada caso2.
 
-> ![](.//media/image60.png){width="1.5in" height="0.3958333333333333in"}
+> ![](.//media/image60.png)
 
 -   Modificamos el archivo index.html de la rama principal, lo guardamos
     y lo añadimos al repositorio.
 
-> ![](.//media/image59.png){width="3.8960017497812776in"
-> height="1.6367672790901138in"}
->
-> ![](.//media/image61.png){width="3.8627449693788276in"
-> height="1.0775503062117235in"}
+> ![](.//media/image59.png)
+> ![](.//media/image61.png)
 
 -   Hacemos merge con la rama creada que esta con el index.html vacío.
 
-> ![](.//media/image62.png){width="1.4895833333333333in"
-> height="0.5104166666666666in"}
+> ![](.//media/image62.png)
 
 -   En este caso no dio ningún conflicto aunque los dos archivos
     index.html eran distintos, pero al contrario del caso anterior, la
     rama creada no se llenó con los datos de la rama master se quedó
     igual a cuando fue creada la rama, en este caso se mantuvo vacío.
 
-> ![](.//media/image63.png){width="1.8333333333333333in"
-> height="0.9803926071741033in"}
+> ![](.//media/image63.png)
 
 -   Caso 3: El mismo cambio tanto en la rama master como en la nueva
     rama
@@ -502,40 +438,31 @@ la rama principal (master) a través de un merge.
     -   Comenzamos con el archivo index.html vacío y añadido al
         repositorio en la rama principal.
 
-> ![](.//media/image52.png){width="2.5in" height="0.9270833333333334in"}
+> ![](.//media/image52.png)
 
 -   Creamos la nueva rama y modificamos el index.html
 
-> ![](.//media/image64.png){width="2.4479166666666665in"
-> height="0.4791666666666667in"}
+> ![](.//media/image64.png)
 >
-> ![](.//media/image59.png){width="3.8960017497812776in"
-> height="1.6367672790901138in"}
+> ![](.//media/image59.png)
 
 -   Lo añadimos al repositorio de la rama creada
 
-> ![](.//media/image65.png){width="3.8725492125984253in"
-> height="0.7433595800524935in"}
+> ![](.//media/image65.png)
 
 -   Cambiamos a la rama master y hacemos el mismo cambio
 
-> ![](.//media/image66.png){width="2.25in" height="0.5625in"}
+> ![](.//media/image66.png)
 >
-> ![](.//media/image59.png){width="3.8960017497812776in"
-> height="1.6367672790901138in"}
+> ![](.//media/image59.png)
 
 -   Añadimos el cambio al repositorio de la rama master.
 
-> ![](.//media/image67.png){width="3.898284120734908in"
-> height="0.830320428696413in"}
-
+> ![](.//media/image67.png)
 -   Hacemos merge con la rama creada.
 
-> ![](.//media/image68.png){width="2.9375in"
-> height="0.5104166666666666in"}
->
-> ![](.//media/image69.png){width="3.8907655293088363in"
-> height="1.022671697287839in"}
+> ![](.//media/image68.png)
+> ![](.//media/image69.png)
 
 -   En este caso aparece este mensaje en donde podemos especificar qué
     mensaje queremos asignarle al último commit. Al hacer merge se
@@ -547,14 +474,12 @@ la rama principal (master) a través de un merge.
 
 -   Podemos ejecutar nuevamente el merge sin generar conflictos
 
-> ![](.//media/image70.png){width="1.4791666666666667in"
-> height="0.5520833333333334in"}
+> ![](.//media/image70.png)
 
 -   Se puede observar con git log los commits y si se añadieron líneas
     en el archivo abierto se lo podrá visualizar.
 
-> ![](.//media/image71.png){width="3.857638888888889in"
-> height="1.0253423009623797in"}
+> ![](.//media/image71.png)
 
 -   Caso 4: cambio en las mismas líneas de código de la rama master y de
     la nueva rama.
@@ -562,41 +487,33 @@ la rama principal (master) a través de un merge.
     -   Comenzamos con un archivo index.html con la estructura html5
         alojado en la rama principal y añadido al repositorio.
 
-> ![](.//media/image59.png){width="3.8960017497812776in"
-> height="1.6367672790901138in"}
+> ![](.//media/image59.png)
 
 -   Creamos la nueva rama y modificamos el index.html añadiéndole una
     etiqueta script.
 
-> ![](.//media/image72.png){width="2.6145833333333335in"
-> height="0.5625in"}
+> ![](.//media/image72.png)
 >
-> ![](.//media/image73.png){width="3.858050087489064in"
-> height="1.6441174540682415in"}
+> ![](.//media/image73.png)
 
 -   Guardamos y lo añadimos al repositorio.
 
-> ![](.//media/image74.png){width="3.8333333333333335in"
-> height="1.2395833333333333in"}
+> ![](.//media/image74.png)
 
 -   Regresamos a la rama master y modificamos el index.html, solo que
     esta vez añadiremos una etiqueta de párrafo.
 
-> ![](.//media/image75.png){width="2.1354166666666665in"
-> height="0.5208333333333334in"}
+> ![](.//media/image75.png)
 >
-> ![](.//media/image76.png){width="3.8528226159230097in"
-> height="1.6745100612423447in"}
+> ![](.//media/image76.png)
 
 -   Guardamos y lo añadimos al repositorio
 
-> ![](.//media/image77.png){width="3.892156605424322in"
-> height="0.8023304899387577in"}
+> ![](.//media/image77.png)
 
 -   Realizamos el merge con la rama creada.
 
-> ![](.//media/image78.png){width="3.933980752405949in"
-> height="0.5098031496062992in"}
+> ![](.//media/image78.png)
 
 -   Aquí podemos ver un conflicto ya que los dos archivos fueron
     modificados en la misma línea.
@@ -606,24 +523,20 @@ la rama principal (master) a través de un merge.
 > los conflictos entre las ramas y para solucionarlo tenemos que
 > eliminar estos símbolos y letras manualmente.
 >
-> ![](.//media/image79.png){width="3.8869039807524057in"
-> height="1.7555971128608925in"}
+> ![](.//media/image79.png)
 >
 > Cambios:
 >
-> ![](.//media/image80.png){width="3.832393919510061in"
-> height="1.4317399387576553in"}
+> ![](.//media/image80.png)
 
 -   Guardamos y lo añadimos al repositorio.
 
-> ![](.//media/image81.png){width="2.8854166666666665in"
-> height="0.7916666666666666in"}
+> ![](.//media/image81.png)
 
 -   Una vez resuelto podemos verificar con otro merge a la rama y todo
     estará sin errores.
 
-> ![](.//media/image82.png){width="1.46875in"
-> height="0.4166666666666667in"}
+> ![](.//media/image82.png)
 
 -   Hay que tomar en cuenta que así se haya solucionado el conflicto los
     index de las dos ramas son distintos ya que el index de la rama se
@@ -632,26 +545,22 @@ la rama principal (master) a través de un merge.
 -   Si se desea observar de una manera más gráfica se puede digitar el
     comando git log ---oneline ---decorate ---all \--graph
 
-> ![](.//media/image83.png){width="3.920955818022747in"
-> height="0.7440146544181977in"}
+> ![](.//media/image83.png)
 
 24. **Etiquetas**
 
 Para poder versionar nuestro código podemos hacer uso del comando git
 tag de la siguiente manera:
 
-![](.//media/image84.png){width="5.460784120734908in"
-height="1.308209755030621in"}
+![](.//media/image84.png)
 
 Así mismo podemos borrarlo mediante git tag -d
 
-![](.//media/image85.png){width="2.6145833333333335in"
-height="0.53125in"}
+![](.//media/image85.png)
 
 También podemos ponerle tag a cualquier commit, previamente creado,
 mediante la instrucción git tag -a versión \[commitid\] -m "\[Mensaje\]"
 
-![](.//media/image86.png){width="5.470588363954506in"
-height="0.43872812773403325in"}
+![](.//media/image86.png)
 
-![](.//media/image87.png){width="4.666666666666667in" height="0.75in"}
+![](.//media/image87.png)
