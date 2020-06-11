@@ -1,8 +1,9 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-<center> <h1>TUTORIAL BÁSICO Y COMANDOS ÚTILES DE GIT</h1> </center>
-
 <a name="top"></a>
+<div align="Center">
+ <h1>TUTORIAL BÁSICO Y COMANDOS ÚTILES DE GIT</h1> 
+ </div>
 
 Indice| De | Contenidos
 ------------ | -------------|------------
@@ -22,14 +23,15 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 
 >>Descargar e instalar GIT desde la página oficial <https://git-scm.com/downloads>, una vez instalado abrimos el GIT BASH.
 
-[:point_up:](#top)
+[Subir :point_up:](#top)
 
 2. <a name="item2"></a> **Verificar versión de GIT**
 
 >>Para saber la versión de Git instalada utilizamos el comando *git \--version*
 
 >>![](.//media/image1.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
 
 3. <a name="item3"></a>  **Configurar nombre y correo de contribuidor de GIT**
 
@@ -40,33 +42,43 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 -   *git config \--global user.email "\[Correo\]"* (No es necesario que sea un correo válido, sin embargo cuando tengas una cuenta de github es importante poner el correo de github para contar como contribuidor)
 
 >>![](.//media/image2.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 4. <a name="item4"></a> **Visualizar nombre y correo de contribuidor de GIT**
 
 >>Con el comando *git config ---global -l* puedo ver el usuario y correo actual del repositorio local
 
 >>![](.//media/image3.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 5. <a name="item5"></a> **Creación de un repositorio local**
 
 >>Primero nos ubicamos en la carpeta que queremos tener nuestro repositorio local, ya dentro de la carpeta seleccionada ejecutamos el comando git init el cual inicializa el repositorio local creando una carpeta .git oculta.
 
 >>![](.//media/image4.png)
 >>![](.//media/image5.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 6. <a name="item6"></a> **Arquitectura básica de GIT**
 >>![](.//media/image88.png)
 >>Para entender de manera general a Git, hablaremos de sus 3 estados o áreas que se manejan.
 
 >>El working directory es el estado inicial, en donde se encuentran todos los archivos de la carpeta en donde se inicializó el git, pero que aún no han sido incrustados en el repositorio. El staging area es un estado intermedio de GIT en donde se encuentran los archivos escogidos para ser incrustados en el repositorio, pueden ser todos los archivos o los que yo elija específicamente. Por último el repository es el estado final, en donde ya se encuentra guardada una versión de los archivos.
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 7. <a name="item7"></a> **Verificar en que estado se encuentran los archivos del repositorio.**
 
 >>*git status* muestra el estado actual de los archivos. Si los nombres de los archivos están en rojo, es porque aún no han sido añadidos al repositorio, es decir que siguen en el working directory. Si los nombres de los archivos están en verde significa que ya se encuentran añadidos al staging area. Finalmente si aparece el mensaje Nothing to commit, working tree clean, significa que todos los archivos ya han sido subidos al repositorio.
 
 >>![](.//media/image6.png)
 >>![](.//media/image7.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 8. <a name="item8"></a> **Pasar de estado Working Directory -- Staging Area**
 
 >>Para pasar de estado (Working directory -- Staging Area), debemos ejecutar el comando *git add .*
@@ -74,14 +86,18 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>Si hacemos un git status, los nombres de los archivos se cambian a color verde. Hay que tomar en cuenta que el punto "." al final del git add significa que se añaden **todos** los archivos de la carpeta al staging área, si se desea añadir archivos específicos, se especifica el nombre del archivo, ejemplo: *git add index.html* y solo el index será añadido al staging área.
 
 >>![](.//media/image8.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 9. <a name="item9"></a> **Pasar de estado Staging Area - Repository**
 
 >>El comando *git commit -m "\[Mensaje\]"* se utiliza para terminar de añadir los archivos del staging area al repositorio. El mensaje dentro de las comillas sirve para identificar el cambio realizado.
 
 >>![](.//media/image9.png)
 >>![](.//media/image10.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 10. <a name="item10"></a> **Verificar cambios entre el repositorio actual y el último commit**
 
 >>El comando *git diff* sirve para comparar la situación actual del repositorio con la del último commit. Es decir, muestra si faltan o han sido modificados archivos.
@@ -91,7 +107,9 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >> ![](.//media/image11.png)
 >> ![](.//media/image12.png)
 >> ![](.//media/image13.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 11. <a name="item11"></a>**Restaurar archivos del último commit**
 
 >>El comando *git checkout .* sirve para restaurar los archivos al último commit en caso de haber modificado los archivos por error.
@@ -100,7 +118,9 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 
 >> ![](.//media/image14.png)
 >> ![](.//media/image15.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 12. <a name="item12"></a>**Quitar archivos del Staging Area**
 
 >>El comado *git reset* sirve para quitar los archivos del staginig área y devolveros al working directory, esto es útil en caso de equivocarnos en agregar archivos al staging area que no queremos añadirlos al repositorio.
@@ -121,27 +141,35 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 
 >> ![](.//media/image19.png)
 >> ![](.//media/image20.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 13. <a name="item13"></a> **Historial de commits**
 
 >>El comando *git log* muestra un histórico de los commits realizados incluyendo su id-hash, la fecha, el autor y el correo del usuario que lo realizó.
 
 >>![](.//media/image21.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 14. <a name="item14"></a>**Alias para comandos**
 
 >>Los alias sirven para establecer un nombre corto o cualquier nombre a un comando con el fin de ahorrar tiempo o facilitar su escritura.
 
 >> *git config --global alias.\[Alias\] "\[Comando\]"*
 >>![](.//media/image22.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 15. <a name="item15"></a>**Modificar mensaje de un commit**
 
 >>Si se comete algún error al poner el mensaje del commit puedo cambiarlo mediante el comando *git commit --amend -m "\[Nuevo mensaje\]"*
 
 >>![](.//media/image23.png)
 >>![](.//media/image24.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 16. <a name="item16"></a> **Cambio de nombres a archivos dentro del repositorio**
 
 >>Si se desea cambiar el nombre de un archivo que ya fue puesto en el repositorio, puedo hacerlo de dos maneras, la primera cambiando el archivo manualmente desde el explorador de archivos y después ejecutar los comandos *git add .* y *git commit* , pero una buena práctica es mediante el comando *git mv \[Nombreantiguo\] \[Nombrenuevo\]* debido a que se sabe que archivos fueron renombrados (renamed en el git status). Cabe recalcar que los cambios se reflejan automáticamente en el explorador de archivos. Finalmente también es necesario terminar de añadir los cambios al repositorio mediante los comandos *git add .* y *git commit*
@@ -149,13 +177,17 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>![](.//media/image25.png)
 >>![](.//media/image26.png)
 >>![](.//media/image27.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 17. <a name="item17"></a> **Eliminar un archivo del repositorio**
 
 >>Al igual que el caso anterior, si debemos borrar un archivo, podemos eliminarlo y volver a hacer el commit, sin embargo para llevar una control de la versión, se recomienda usar el comando *git rm [Archivo]*
 
 >>![](.//media/image28.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 18. <a name="item18"></a>**Recuperar archivos de anteriores commits**
 
 >>Si por error eliminé un archivo o deseo recuperarlo, puedo volver a recuperarlo a través del comando *git reset \--hard \[commitid\]* , en donde el commitid es el el id del commit al que queremos llegar después del hard.
@@ -163,7 +195,8 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>![](.//media/image29.png)
 >>![](.//media/image30.png)
 
->>[:point_up:](#top)
+[Subir :point_up:](#top)
+
 19. <a name="item19"></a> **Obtener el id o hash del commit**
 
 >>Podemos obtener el id o hash del commit tras ejecutar los comandos *git log* o *git reflog*, en donde el id son la combinación de números y letras presentadas en color amarillo-
@@ -175,13 +208,17 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 -   **Git reflog**
 
 >> ![](.//media/image32.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 20. <a name="item20"></a> **Git reflog**
 
 >>Después de volver a un commit anterior, el comando git log no mostrara los cambios realizados después de ese commit, sin embargo con el comando *git reflog* sí se puede visualizar todo el histórico de commits realizados en el repositorio.
 
 >>![](.//media/image33.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 21. <a name="item21"></a>**Ubicarse en otro commit manteniendo los cambios del último
     commit**
 
@@ -200,7 +237,9 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 -   Como se puede ver volvimos al último commit, sin embargo, los cambios realizados en el anterior commit se mantienen.
 
 >> ![](.//media/image38.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 22. <a name="item22"></a> **Archivo .gitignore**
 
 >>El archivo .gitignore permite excluir archivos que no queremos que se carguen en nuestro repositorio, pueden ser configuraciones, dependencias o cualquier tipo de archivos que queremos que git ignore al momento de subirlo al repositorio.
@@ -220,8 +259,10 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 
 >> ![](.//media/image42.png)
 
--   <https://github.com/github/gitignore> en este link puedes encontrar ejemplos de archivos .gitignore dependiendo de la tecnología que estés usando lo que tendrías que hacer es simplemente quitar el nombre completo (ejemplo java.gitignore) y cambiarlo solo por .gitignore. Esto te ayudará a no sobrecargar el repositorio con información irrelevante
-[:point_up:](#top)
+-   <https://github.com/github/gitignore> en este link puedes encontrar ejemplos de archivos .gitignore dependiendo de la tecnología que estés usando lo que tendrías que hacer es simplemente quitar el nombre completo (ejemplo java.gitignore) y cambiarlo solo por .gitignore. Esto te ayudará a no sobrecargar el repositorio con información irrelevante.
+
+[Subir :point_up:](#top)
+
 23. <a name="item23"></a>**Ramas**
 
 >>Las ramas son extensiones del proyecto que apuntan a la rama principal, estas sirven para trabajar de manera experimental sobre el proyecto y cuando se está seguro de las modificaciones desarrolladas se las carga a la rama principal (master) a través de un merge.
@@ -403,7 +444,9 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>>>-   Si se desea observar de una manera más gráfica se puede digitar el comando *git log ---oneline ---decorate ---all \--graph*
 
 >>>>>> ![](.//media/image83.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
+
 24. <a name="item24"></a>**Etiquetas**
 
 >>Para poder versionar nuestro código podemos hacer uso del comando *git tag [Versión]* de la siguiente manera:
@@ -419,4 +462,5 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>![](.//media/image86.png)
 
 >>![](.//media/image87.png)
-[:point_up:](#top)
+
+[Subir :point_up:](#top)
