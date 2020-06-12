@@ -63,7 +63,9 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 [Subir :point_up:](#top)
 
 6. <a name="item6"></a> **Arquitectura básica de GIT**
+
 >>![](.//media/image88.png)
+
 >>Para entender de manera general a Git, hablaremos de sus 3 estados o áreas que se manejan.
 
 >>El working directory es el estado inicial, en donde se encuentran todos los archivos de la carpeta en donde se inicializó el git, pero que aún no han sido incrustados en el repositorio. El staging area es un estado intermedio de GIT en donde se encuentran los archivos escogidos para ser incrustados en el repositorio, pueden ser todos los archivos o los que yo elija específicamente. Por último el repository es el estado final, en donde ya se encuentra guardada una versión de los archivos.
@@ -157,6 +159,7 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 >>Los alias sirven para establecer un nombre corto o cualquier nombre a un comando con el fin de ahorrar tiempo o facilitar su escritura.
 
 >> *git config --global alias.\[Alias\] "\[Comando\]"*
+
 >>![](.//media/image22.png)
 
 [Subir :point_up:](#top)
