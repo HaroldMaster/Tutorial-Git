@@ -64,7 +64,7 @@ Git es un sistema de control de versiones distribuido gratuito y de código abie
 
 6. <a name="item6"></a> **Arquitectura básica de GIT**
 
->>![](.//media/image88.png)
+>>![](.//media/image88.PNG)
 
 >>Para entender de manera general a Git, hablaremos de sus 3 estados o áreas que se manejan.
 
